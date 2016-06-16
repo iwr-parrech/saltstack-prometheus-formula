@@ -24,7 +24,7 @@ prometheus_collectd_exporter_link_current_version:
   file:
     - symlink
     - name: /srv/prometheus-collectd_exporter/current
-    - target: /srv/prometheus-collectd_exporter/{{ datamap.collectd_exporter.cur_version }}/collectd_exporter-{{ datamap.collectd_exporter.cur_version }}.linux-amd64
+    - target: /srv/prometheus-collectd_exporter/{{ datamap.collectd_exporter.cur_version }}/collectd_exporter-{{ datamap.collectd_exporter.cur_version }}.linux-amd64/
     - user: prometheus
     - group: prometheus
 
