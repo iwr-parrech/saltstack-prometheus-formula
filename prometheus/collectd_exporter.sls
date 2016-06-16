@@ -46,7 +46,7 @@ prometheus_collectd_exporter_service_script:
         WorkingDirectory=/srv/prometheus-collectd_exporter/current
         User=prometheus
         Group=prometheus
-        ExecStart=/srv/prometheus-collectd_exporter/current/collectd_exporter -log.level info
+        ExecStart=/srv/prometheus-collectd_exporter/current/collectd_exporter -collectd.listen-address 0.0.0.0:25826 -log.level info
 
         [Install]
         WantedBy=multi-user.target
